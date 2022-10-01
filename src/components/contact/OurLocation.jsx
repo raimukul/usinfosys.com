@@ -20,7 +20,7 @@ export default function OurLocation() {
   return (
     <div>
       <Container>
-        <div className="pt-5">
+        <div className="pt-2">
           <Card>
             <CardHeader
               title="Our Locations"
@@ -47,10 +47,28 @@ export default function OurLocation() {
                     <ListItem>
                       <ListItemAvatar>
                         <Avatar>
-                          <PhoneIcon />
+                          <PhoneIcon color="info" />
                         </Avatar>
                       </ListItemAvatar>
-                      <Typography variant="p">(913) 735-9270</Typography>
+                      <a
+                        href="tel:+19137359270"
+                        className="text-decoration-none"
+                      >
+                        <Typography variant="p">(913) 735-9270</Typography>
+                      </a>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemAvatar>
+                        <Avatar>
+                          <FaxIcon color="info" />
+                        </Avatar>
+                      </ListItemAvatar>
+                      <a
+                        href="fax:+19134269151"
+                        className="text-decoration-none"
+                      >
+                        <Typography variant="p">(913) 426-9151</Typography>
+                      </a>
                     </ListItem>
                   </Card>
                 </Grid>
@@ -75,10 +93,15 @@ export default function OurLocation() {
                     <ListItem>
                       <ListItemAvatar>
                         <Avatar>
-                          <PhoneIcon />
+                          <PhoneIcon color="info" />
                         </Avatar>
                       </ListItemAvatar>
-                      <Typography variant="p">+91-265-2771900</Typography>
+                      <a
+                        href="tel:+912652771900"
+                        className="text-decoration-none"
+                      >
+                        <Typography variant="p">+91-265-2771900</Typography>
+                      </a>
                     </ListItem>
                   </Card>
                 </Grid>

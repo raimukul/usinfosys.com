@@ -27,7 +27,7 @@ export default function Contact() {
         <Image className="w-100" src="./banner/contact.svg"></Image>
       </Box>
       <Container>
-        <Card className="p-4">
+        <Card className="p-3">
           <Grid container spacing={2} className="p-2">
             <Grid xs={12} md={8} className="p-4">
               <Typography variant="subtitle1" pb={3}>

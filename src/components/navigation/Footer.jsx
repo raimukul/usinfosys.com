@@ -1,6 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import { Info} from "@mui/icons-material";
 import {
   AppBar,
   Divider,
@@ -18,10 +16,9 @@ export default function Footer() {
       <Grid
         container
         justify="center"
-        style={{ minHeight: "212px", backgroundColor: "#333" }}
-        className="pt-5"
+        className="pt-5 bg_footer"
       >
-        <Container>
+        <Container >
         <Grid
           container
           item
@@ -32,18 +29,12 @@ export default function Footer() {
         >
              <Grid item sm={3} xs={12}>
           <List>
-              <ListItem
-                sx={{
-                  fontWeight:"bold",
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                American Info Systems Inc.
-              </ListItem>
+            <ListItem>
+              <img src="./banner/logo4.png" className="w-75 m-auto"></img>
+            </ListItem>
+             
               <Divider />
-              <ListItem>DBA Training</ListItem>
-              <ListItem>Software QA Training</ListItem>
+              <ListItem className="text-lg-left text-md-left text-center">A woman-owned business with commitment to provide the quality services to our clients.</ListItem>
             </List>
           </Grid>
           <Grid item sm={3} xs={12}>
