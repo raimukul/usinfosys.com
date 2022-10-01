@@ -30,7 +30,7 @@ export default function Footer() {
              <Grid item sm={3} xs={12}>
           <List>
             <ListItem>
-              <img src="./banner/logo4.png" className="w-75 m-auto"></img>
+              {/* <img src="./banner/logo4.png" alt="logo" className="w-75 m-auto"></img> */}
             </ListItem>
              
               <Divider />
