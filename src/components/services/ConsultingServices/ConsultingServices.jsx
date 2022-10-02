@@ -6,32 +6,18 @@ export default function ConsultingServices() {
   return (
     <div>
       <Container>
-        <div className="pt-2">
-          <Card className="p-4">
-          <Typography variant="h5">Consulting Services</Typography>
-          <Divider className="bg-dark w-25" variant="string" />
-            <Typography className="pt-2" variant="body1">
-              AIS Consulting Services help clients solve their Software Quality
-              Assurance challenges and achieve the quality goal. Our Consulting
-              offerings are based on years of progressive experience assisting
-              customers to meet their quality needs. Software Testing Services
-              of AIS consulting services offering is delivered by a team of
-              consultants including architects and specialists with in-depth
-              industry, business, technology, and quality process. These
-              seasoned consultants have empowered a range of companies to
-              embrace industry leading technologies that align with their unique
-              quality goals. We help clients to identify and implement best
-              practice solutions to address the unique business challenges.
-              These efficiently delivered solutions help you transform your
-              business with targeted investments toward growth, optimized
-              efficiency and predictable total cost of ownership (TCO), and
-              well-managed risk and compliance around business operations.
-            </Typography>
-          </Card>
-        </div>
         <Card className="p-4">
           <Typography variant="h5">Our IT Consulting Services</Typography>
           <Divider className="bg-dark w-25" variant="string" />
+          <Typography className="pt-2" variant="body1">
+            AIS enables success in essential strategic endeavors that transform
+            enterprises by aligning IT strategy and priorities to their business
+            objectives. We deliver practical advice and fast performing
+            solutions by leveraging our industry insight and unrivalled
+            technology expertise.
+            <br />
+            AIS’s IT consulting services include:
+          </Typography>
           <Grid container spacing={3} className="pt-5">
             <Grid item xs={12} md={6} lg={4}>
               <Card>
@@ -73,11 +59,23 @@ export default function ConsultingServices() {
               <Card>
                 <img
                   className="w-50 rounded mx-auto d-block"
-                  src="./services/execution.png"
+                  src="./services/information-management.png"
                   alt="gade"
                 ></img>
                 <Typography className="text-center pt-2 pb-2">
                   IT Process and Service Management
+                </Typography>
+              </Card>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <Card>
+                <img
+                  className="w-50 rounded mx-auto d-block"
+                  src="./services/execution.png"
+                  alt="asrgtaewg"
+                ></img>
+                <Typography className="text-center pt-2 pb-2">
+                IT Strategy and Governance
                 </Typography>
               </Card>
             </Grid>

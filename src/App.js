@@ -4,7 +4,7 @@ import Header from "./components/navigation/Header";
 import Footer from "./components/navigation/Footer";
 import "./App.css"
 import Index from "./components/homePage/Index";
-import ConsultingServices from "./components/services/ConsultingServices";
+import ConsultingServices from "./components/services/ConsultingServices/Index";
 import DatabaseServices from "./components/services/DatabaseServices";
 import NetworkingServices from "./components/services/NetworkingServices";
 import StaffingServices from "./components/services/StaffingServices";
