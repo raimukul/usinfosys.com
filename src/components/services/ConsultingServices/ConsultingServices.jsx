@@ -87,7 +87,7 @@ export default function ConsultingServices() {
                   alt="asrgtaewg"
                 ></img>
                 <Typography className="text-center pt-2 pb-2">
-                  IT Strategy and Governance
+                Quality Assurance and Testing
                 </Typography>
               </Card>
             </Grid>

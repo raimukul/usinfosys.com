@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ConsultingServices.css";
 
 export default function Banner() {
   return (
@@ -16,12 +15,14 @@ export default function Banner() {
               ></img>
             </div>
             <div className="col-lg-6">
-              <h1 className="mt-3">Consulting Services</h1>
+              <h1 className="mt-3">Database Services</h1>
               <p className="lead text-secondary my-5">
-                AIS Consulting Services help clients solve their Software
-                Quality Assurance challenges and achieve the quality goal. Our
-                Consulting offerings are based on years of progressive
-                experience assisting customers to meet their quality needs.
+                Turn your organizational data into a strategic asset to making
+                decision and grow your business with our database services At
+                the core of almost every application in your company lies a
+                database. Databases provide the underlying support to your
+                customer service, production operations, internal operations,
+                sales, and marketing.
               </p>
               <Link
                 to="/contact"

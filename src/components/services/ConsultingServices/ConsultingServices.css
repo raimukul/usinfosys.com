@@ -13,7 +13,7 @@
 }
 .hero-banner .btn:before {
   content: "";
-  background: #ed5561;
+  background: rgb(241, 139, 50);
   width: 4px;
   height: 100%;
   position: absolute;
