@@ -9,7 +9,7 @@ export default function Banner() {
           <div className="row row align-items-center">
             <div className="col-lg-5 offset-lg-1 order-lg-1">
               <img
-                src="./services/AIS_Consulting_Services.svg"
+                src="./services/AIS_Database_services.svg"
                 className="img-fluid"
                 alt="Web Development"
               ></img>
