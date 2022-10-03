@@ -15,7 +15,7 @@ export default function Banner() {
               ></img>
             </div>
             <div className="col-lg-6">
-              <h1 className="mt-3">Staffing service</h1>
+              <h1 className="mt-3">Staffing Services</h1>
               <p className="lead text-secondary my-5">
                 AIS is a solutions-based consulting firm that delivers real
                 Business Solutions to help our customers achieve Real Business

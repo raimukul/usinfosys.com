@@ -69,13 +69,13 @@ export default function Footer() {
         <Container>
           <Grid
             container
-            item
+            item={true}
             sm={12}
             xs={12}
             justify="space-between"
             className="pb-5"
           >
-            <Grid item sm={3} xs={12}>
+            <Grid sm={3} xs={12} item={true}>
               <List>
                 <ListItem>
                   <img
@@ -91,7 +91,7 @@ export default function Footer() {
                 </ListItem>
               </List>
             </Grid>
-            <Grid item sm={3} xs={12}>
+            <Grid sm={3} xs={12} item={true}>
               <List>
                 <ListItem
                   sx={{
@@ -112,7 +112,7 @@ export default function Footer() {
                 })}
               </List>
             </Grid>
-            <Grid item sm={3} xs={12}>
+            <Grid item={true} sm={3} xs={12}>
               <List>
                 <ListItem
                   sx={{
@@ -139,7 +139,7 @@ export default function Footer() {
                 })}
               </List>
             </Grid>
-            <Grid item sm={3} xs={12}>
+            <Grid item={true} sm={3} xs={12}>
               <List>
                 <ListItem
                   sx={{
@@ -168,7 +168,8 @@ export default function Footer() {
       >
         <Toolbar style={{ justifyContent: "center" }}>
           <Typography variant="caption">
-            @ Copyright 2022 American Info Systems Inc. All Rights Reserved​.
+            &copy; {new Date().getFullYear()} Copyright: American Info Systems
+            Inc. All Rights Reserved​.
           </Typography>
         </Toolbar>
       </AppBar>
