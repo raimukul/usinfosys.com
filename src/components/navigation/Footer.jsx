@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 import { Link } from "react-router-dom";
-import './Navigation.css'
+import "./Navigation.css";
 
 const ftServices = [
   {
@@ -37,6 +37,28 @@ const ftServices = [
     id: 55,
     serviceName: "Testing Services",
     link: "/services/testing-services",
+  },
+];
+const ftSolution = [
+  {
+    id: 31,
+    serviceName: "Testing and Quality Control",
+    link: "/services/consulting-services",
+  },
+  {
+    id: 32,
+    serviceName: "Data Warehouse",
+    link: "/services/database-services",
+  },
+  {
+    id: 33,
+    serviceName: "Business Intelligence (BI)",
+    link: "/services/networking-services",
+  },
+  {
+    id: 34,
+    serviceName: " eBusiness",
+    link: "/services/staffing-services",
   },
 ];
 
@@ -74,7 +96,7 @@ export default function Footer() {
                 <ListItem
                   sx={{
                     fontWeight: "bold",
-                    color: "white",
+                    color: "orange",
                     textDecoration: "none",
                   }}
                 >
@@ -84,8 +106,33 @@ export default function Footer() {
                 {ftServices.map((SVType) => {
                   return (
                     <Link to={SVType.link} key={SVType.id} className="aFooter">
-                      <ListItem key={SVType.id} >
-                        {SVType.serviceName}
+                      <ListItem key={SVType.id}>{SVType.serviceName}</ListItem>
+                    </Link>
+                  );
+                })}
+              </List>
+            </Grid>
+            <Grid item sm={3} xs={12}>
+              <List>
+                <ListItem
+                  sx={{
+                    fontWeight: "bold",
+                    color: "orange",
+                    textDecoration: "none",
+                  }}
+                >
+                  SOLUTIONS
+                </ListItem>
+                <Divider />
+                {ftSolution.map((SolType) => {
+                  return (
+                    <Link
+                      to={SolType.link}
+                      key={SolType.id}
+                      className="aFooter"
+                    >
+                      <ListItem key={SolType.id}>
+                        {SolType.serviceName}
                       </ListItem>
                     </Link>
                   );
@@ -97,26 +144,7 @@ export default function Footer() {
                 <ListItem
                   sx={{
                     fontWeight: "bold",
-                    color: "white",
-                    textDecoration: "none",
-                  }}
-                >
-                  SOLUTIONS
-                </ListItem>
-                <Divider />
-                <ListItem sx={{ color: "#f18b32" }}>Data Warehouse</ListItem>
-                <ListItem sx={{ color: "#f18b32" }}>
-                  Business Intelligence (BI)
-                </ListItem>
-                <ListItem sx={{ color: "#f18b32" }}>E-Business</ListItem>
-              </List>
-            </Grid>
-            <Grid item sm={3} xs={12}>
-              <List>
-                <ListItem
-                  sx={{
-                    fontWeight: "bold",
-                    color: "white",
+                    color: "orange",
                     textDecoration: "none",
                   }}
                 >
