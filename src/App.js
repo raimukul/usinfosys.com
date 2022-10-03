@@ -6,7 +6,7 @@ import "./App.css"
 import Index from "./components/homePage/Index";
 import ConsultingServices from "./components/services/ConsultingServices/Index";
 import DatabaseServices from "./components/services/DatabaseServices/Index";
-import NetworkingServices from "./components/services/NetworkingServices";
+import NetworkingServices from "./components/services/NetworkingServices/Index";
 import StaffingServices from "./components/services/StaffingServices";
 import TestingServices from "./components/services/TestingServices";
 import WhyJoinUS from "./components/services/WhyJoinUs";

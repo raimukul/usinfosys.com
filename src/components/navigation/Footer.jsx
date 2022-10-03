@@ -13,27 +13,27 @@ import { Link } from "react-router-dom";
 
 const ftServices = [
   {
-    id: 1,
+    id: 11,
     serviceName: "Consulting Services",
     link: "/services/consulting-services",
   },
   {
-    id: 2,
+    id: 22,
     serviceName: "Database Services",
     link: "/services/database-services",
   },
   {
-    id: 3,
+    id: 33,
     serviceName: "Networking Services",
     link: "/services/networking-services",
   },
   {
-    id: 4,
+    id: 44,
     serviceName: "Staffing Services",
     link: "/services/staffing-services",
   },
   {
-    id: 5,
+    id: 55,
     serviceName: "Testing Services",
     link: "/services/testing-services",
   },
@@ -82,7 +82,7 @@ export default function Footer() {
                 <Divider />
                 {ftServices.map((SVType) => {
                   return (
-                    <Link to={SVType.link} className="text-decoration-none">
+                    <Link to={SVType.link} key={SVType.id} className="text-decoration-none">
                       <ListItem key={SVType.id} sx={{ color: "#f18b32" }}>
                         {SVType.serviceName}
                       </ListItem>
