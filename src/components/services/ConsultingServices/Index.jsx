@@ -7,8 +7,10 @@ export default function Index() {
   return (
     <div>
         <Banner/>
+        <div className="container">
         <Body/>
         <ConsultingServices/>
+        </div>
     </div>
   )
 }

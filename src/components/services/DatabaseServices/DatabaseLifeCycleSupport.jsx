@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  Container,
   Divider,
   Grid,
   List,
@@ -24,43 +23,41 @@ const dataBaseServices = [
 export default function DatabaseLifeCycleSupport() {
   return (
     <div className="pt-2">
-      <Container>
-        <Card className="p-2">
-          <Grid container spacing={2}>
-            <Grid item sm={12} md={8}>
-              <Typography variant="h5">Database Life Cycle Support</Typography>
-              <Divider className="bg-dark w-25" variant="string" />
-              <Typography>
-                AIS experienced consultants can be involved at any phase of the
-                Database Life Cycle and can help you in deciding to choose the
-                right database for your organization depending on your
-                requirements. The key factors used to evaluate different
-                database are
-                <br />
-                <List aria-label="contacts">
-                  {dataBaseServices.map((DBService) => {
-                    return (
-                      <ListItem disablePadding key={DBService.id}>
-                        <ListItemIcon>
-                          <ArrowRightOutlinedIcon />
-                        </ListItemIcon>
-                        <ListItemText primary={DBService.dbService} />
-                      </ListItem>
-                    );
-                  })}
-                </List>
-              </Typography>
-            </Grid>
-            <Grid item sm={12} md={4}>
-              <img
-                src="../database/Database Life Cycle Support.svg"
-                alt="Database Management system"
-                className="w-100 display-block ml-auto mr-auto"
-              ></img>
-            </Grid>
+      <Card className="p-2">
+        <Grid container spacing={2}>
+          <Grid item sm={12} md={8} className="m-auto">
+            <Typography variant="h5">Database Life Cycle Support</Typography>
+            <Divider className="bg-dark w-25" variant="string" />
+            <Typography>
+              AIS experienced consultants can be involved at any phase of the
+              Database Life Cycle and can help you in deciding to choose the
+              right database for your organization depending on your
+              requirements. The key factors used to evaluate different database
+              are
+              <br />
+              <List aria-label="contacts">
+                {dataBaseServices.map((DBService) => {
+                  return (
+                    <ListItem disablePadding key={DBService.id}>
+                      <ListItemIcon>
+                        <ArrowRightOutlinedIcon />
+                      </ListItemIcon>
+                      <ListItemText primary={DBService.dbService} />
+                    </ListItem>
+                  );
+                })}
+              </List>
+            </Typography>
           </Grid>
-        </Card>
-      </Container>
+          <Grid item sm={12} md={4} className="m-auto">
+            <img
+              src="../database/Database Life Cycle Support.svg"
+              alt="Database Management system"
+              className="w-100 display-block ml-auto mr-auto"
+            ></img>
+          </Grid>
+        </Grid>
+      </Card>
     </div>
   );
 }

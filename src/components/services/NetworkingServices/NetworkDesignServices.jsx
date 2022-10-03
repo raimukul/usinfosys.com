@@ -1,28 +1,26 @@
 import React from "react";
 import { Card, Divider, Grid, Typography } from "@mui/material";
 
-export default function DatabaseArchitectureandDesign() {
+export default function NetworkDesignServices() {
   return (
     <div className="pt-2">
       <Card className="p-2">
         <Grid container spacing={2} justify="space-between">
           <Grid item sm={12} md={4} className="m-auto">
             <img
-              src="../database/Database Architecture and Design.svg"
-              alt="Database Architecture and Design"
+              src="../networking/Network Design Services.svg"
+              alt="Network Design Services"
               className="w-100 display-block ml-auto mr-auto"
             ></img>
           </Grid>
           <Grid item sm={12} md={8} className="m-auto">
-            <Typography variant="h5">
-              Database Architecture and Design
-            </Typography>
+            <Typography variant="h5">Network Design Services</Typography>
             <Divider className="bg-dark w-25" variant="string" />
             <Typography>
-              AIS can help you in designing your physical as well as logical
-              design of your database. Our consultants have gathered experience
-              designing fortune 500 company’s database ranging from 50 GB to 10
-              TB for OLTP, Data warehousing and Data Mart solutions.
+              We can recommend the best and most reliable computer connections,
+              choose the wiring that will take you into the future, and help you
+              make informed buying decisions for dependable, reliable, and
+              cost-effective connection equipment.
             </Typography>
           </Grid>
         </Grid>

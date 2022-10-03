@@ -14,15 +14,17 @@ export default function Index() {
   return (
     <div>
       <Banner />
-      <About />
-      <DataBaseManagement />
-      <DatabaseLifeCycleSupport />
-      <DatabaseArchitectureandDesign />
-      <InstallationandUpgrade />
-      <ApplicationIntegrationandMigration />
-      <PerformanceMonitoringandTuning />
-      <BackupandRecovery />
-      <DatabaseSecurity />
+      <div className="container">
+        <About />
+        <DataBaseManagement />
+        <DatabaseLifeCycleSupport />
+        <DatabaseArchitectureandDesign />
+        <InstallationandUpgrade />
+        <ApplicationIntegrationandMigration />
+        <PerformanceMonitoringandTuning />
+        <BackupandRecovery />
+        <DatabaseSecurity />
+      </div>
     </div>
   );
 }
