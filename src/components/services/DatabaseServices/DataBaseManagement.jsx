@@ -1,10 +1,10 @@
 import React from "react";
 import {
-    Divider,
+  Card,
+  Divider,
   Grid,
   List,
   ListItem,
-  ListItemButton,
   ListItemIcon,
   ListItemText,
   Typography,
@@ -23,40 +23,40 @@ const dataBase = [
 
 export default function DataBaseManagement() {
   return (
-    <div>
+    <div className="pt-2">
       <Container>
-        <Grid container spacing={2} justify="space-between">
-          <Grid item  sm={12} md={4}>
-            <img
-              src="./database/Database Management.svg"
-              alt="Database Management system"
-              className="w-100 m-auto"
-            ></img>
-          </Grid>
-          <Grid item  sm={12} md={8}>
-            <Typography variant="h5">Database Management </Typography>
-            <Divider className="bg-dark w-25" variant="string" />
-            <Typography variant="">
-              We provide comprehensive database service for following desktop
-              and enterprise relational databases:
-              <br />
-              <List aria-label="contacts">
-                {dataBase.map((DBType) => {
-                  return (
-                    <ListItem disablePadding key={DBType.id}>
-                      <ListItemButton>
+        <Card className="p-2">
+          <Grid container spacing={2} justify="space-between">
+            <Grid item sm={12} md={4}>
+              <img
+                src="./database/Database Management.svg"
+                alt="Database Management system"
+                className="w-100 display-block ml-auto mr-auto"
+              ></img>
+            </Grid>
+            <Grid item sm={12} md={8}>
+              <Typography variant="h5">Database Management </Typography>
+              <Divider className="bg-dark w-25" variant="string" />
+              <Typography variant="">
+                We provide comprehensive database service for following desktop
+                and enterprise relational databases:
+                <br />
+                <List aria-label="contacts">
+                  {dataBase.map((DBType) => {
+                    return (
+                      <ListItem disablePadding key={DBType.id}>
                         <ListItemIcon>
                           <ArrowRightOutlinedIcon />
                         </ListItemIcon>
                         <ListItemText primary={DBType.dbType} />
-                      </ListItemButton>
-                    </ListItem>
-                  );
-                })}
-              </List>
-            </Typography>
+                      </ListItem>
+                    );
+                  })}
+                </List>
+              </Typography>
+            </Grid>
           </Grid>
-        </Grid>
+        </Card>
       </Container>
     </div>
   );

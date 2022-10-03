@@ -5,7 +5,7 @@ import "./ConsultingServices.css";
 export default function Banner() {
   return (
     <div>
-      <section className="hero-banner bg-light py-2">
+      <section className="hero-banner bg-light py-1">
         <div className="container">
           <div className="row row align-items-center">
             <div className="col-lg-5 offset-lg-1 order-lg-1">
