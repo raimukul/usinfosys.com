@@ -33,7 +33,7 @@ export default function PerformanceMonitoringandTuning() {
             </Grid>
             <Grid item sm={12} md={4}>
               <img
-                src="./database/Performance Monitoring and Tuning.svg"
+                src="../database/Performance Monitoring and Tuning.svg"
                 alt="Performance Monitoring and Tuning"
                 className="w-100 display-block ml-auto mr-auto"
               ></img>

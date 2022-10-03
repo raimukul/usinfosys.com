@@ -29,7 +29,7 @@ export default function DataBaseManagement() {
           <Grid container spacing={2} justify="space-between">
             <Grid item sm={12} md={4}>
               <img
-                src="./database/Database Management.svg"
+                src="../database/Database Management.svg"
                 alt="Database Management system"
                 className="w-100 display-block ml-auto mr-auto"
               ></img>

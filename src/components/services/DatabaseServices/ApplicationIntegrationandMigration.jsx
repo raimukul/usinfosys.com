@@ -9,7 +9,7 @@ export default function ApplicationIntegrationandMigration() {
           <Grid container spacing={2} justify="space-between">
             <Grid item sm={12} md={4}>
               <img
-                src="./database/Application Integration and Migration.svg"
+                src="../database/Application Integration and Migration.svg"
                 alt="Application Integration and Migration"
                 className="w-100 display-block ml-auto mr-auto"
               ></img>

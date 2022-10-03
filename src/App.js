@@ -21,11 +21,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<WhyJoinUS />} />
-          <Route path="/consulting-services" element={<ConsultingServices />} />
-          <Route path="/database-services" element={<DatabaseServices />} />
-          <Route path="/networking-services" element={<NetworkingServices />} />
-          <Route path="/staffing-services" element={<StaffingServices />} />
-          <Route path="/testing-services" element={<TestingServices />} />
+          <Route path="/services/consulting-services" element={<ConsultingServices />} />
+          <Route path="/services/database-services" element={<DatabaseServices />} />
+          <Route path="/services/networking-services" element={<NetworkingServices />} />
+          <Route path="/services/staffing-services" element={<StaffingServices />} />
+          <Route path="/services/testing-services" element={<TestingServices />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

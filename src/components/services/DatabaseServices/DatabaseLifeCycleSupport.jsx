@@ -53,7 +53,7 @@ export default function DatabaseLifeCycleSupport() {
             </Grid>
             <Grid item sm={12} md={4}>
               <img
-                src="./database/Database Life Cycle Support.svg"
+                src="../database/Database Life Cycle Support.svg"
                 alt="Database Management system"
                 className="w-100 display-block ml-auto mr-auto"
               ></img>

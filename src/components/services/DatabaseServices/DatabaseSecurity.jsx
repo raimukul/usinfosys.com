@@ -20,7 +20,7 @@ export default function DatabaseSecurity() {
             </Grid>
             <Grid item sm={12} md={4}>
               <img
-                src="./database/Database Security.svg"
+                src="../database/Database Security.svg"
                 alt="Database Security system"
                 className="w-100 display-block ml-auto mr-auto"
               ></img>

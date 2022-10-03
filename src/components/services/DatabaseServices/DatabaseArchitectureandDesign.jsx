@@ -9,7 +9,7 @@ export default function DatabaseArchitectureandDesign() {
           <Grid container spacing={2} justify="space-between">
             <Grid item sm={12} md={4}>
               <img
-                src="./database/Database Architecture and Design.svg"
+                src="../database/Database Architecture and Design.svg"
                 alt="Database Architecture and Design"
                 className="w-100 display-block ml-auto mr-auto"
               ></img>

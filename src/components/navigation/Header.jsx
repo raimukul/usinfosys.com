@@ -23,7 +23,7 @@ export default function Header() {
               >
                 <NavDropdown.Item
                   as={Link}
-                  to="/consulting-services"
+                  to="/services/consulting-services"
                   className="text-decoration-none"
                   eventkey={2}
                 >
@@ -31,7 +31,7 @@ export default function Header() {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/database-services"
+                  to="/services/database-services"
                   className="text-decoration-none"
                   eventkey={3}
                 >
@@ -39,7 +39,7 @@ export default function Header() {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/networking-services"
+                  to="/services/networking-services"
                   className="text-decoration-none"
                   eventkey={4}
                 >
@@ -47,7 +47,7 @@ export default function Header() {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/staffing-services"
+                  to="/services/staffing-services"
                   className="text-decoration-none"
                   eventkey={5}
                 >
@@ -55,7 +55,7 @@ export default function Header() {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/testing-services"
+                  to="/services/testing-services"
                   className="text-decoration-none"
                   eventkey={6}
                 >
@@ -64,7 +64,7 @@ export default function Header() {
               </NavDropdown>
               <Nav.Link
                 as={Link}
-                to="/testing-services"
+                to="/services/testing-services"
                 className="text-decoration-none"
                 eventkey={7}
               >

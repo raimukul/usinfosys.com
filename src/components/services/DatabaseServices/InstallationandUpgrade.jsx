@@ -27,7 +27,7 @@ export default function InstallationandUpgrade() {
             </Grid>
             <Grid item sm={12} md={4}>
             <img
-                src="./database/Installation and Upgrade.svg"
+                src="../database/Installation and Upgrade.svg"
                 alt="Installation and Upgrade"
                 className="w-100 display-block ml-auto mr-auto"
               ></img>
