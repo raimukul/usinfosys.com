@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 import { Link } from "react-router-dom";
+import './Navigation.css'
 
 const ftServices = [
   {
@@ -82,8 +83,8 @@ export default function Footer() {
                 <Divider />
                 {ftServices.map((SVType) => {
                   return (
-                    <Link to={SVType.link} key={SVType.id} className="text-decoration-none">
-                      <ListItem key={SVType.id} sx={{ color: "#f18b32" }}>
+                    <Link to={SVType.link} key={SVType.id} className="aFooter">
+                      <ListItem key={SVType.id} >
                         {SVType.serviceName}
                       </ListItem>
                     </Link>
