@@ -1,4 +1,4 @@
-import { Card, Divider, List, ListItem, Typography } from "@mui/material";
+import { Card, List, ListItem } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ export default function DataWarehouse() {
           <div className="row row align-items-center">
             <div className="col-lg-5 offset-lg-1 order-lg-1">
               <img
-                src="../services/AIS_Database_services.svg"
+                src="../database/DataWarehoue.svg"
                 className="img-fluid"
                 alt="Web Development"
               ></img>
