@@ -8,7 +8,7 @@ import ConsultingServices from "./components/services/ConsultingServices/Index";
 import DatabaseServices from "./components/services/DatabaseServices/Index";
 import NetworkingServices from "./components/services/NetworkingServices/Index";
 import StaffingServices from "./components/services/StaffingServices/Index";
-import TestingServices from "./components/services/TestingServices";
+import TestingServices from "./components/services/TestingServices/Index";
 import WhyJoinUS from "./components/services/WhyJoinUs";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
