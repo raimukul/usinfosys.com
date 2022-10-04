@@ -5,6 +5,49 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 
+const NService = [
+  {
+    id: 1,
+    SLink: "/services/consulting-services",
+    SName: "Consulting Services",
+  },
+  { id: 2,
+    SLink: "/services/database-services",
+    SName: "Database Services" },
+  {
+    id: 3,
+    SLink: "/services/networking-services",
+    SName: "Networking Services",
+  },
+  { id: 4,
+    SLink: "/services/staffing-services",
+    SName: "Staffing Services" },
+  { id: 5,
+    SLink: "/services/testing-services",
+    SName: "Testing Services" }
+];
+const NSolution = [
+  {
+    id: 1,
+    serviceName: "Testing and Quality Control",
+    link: "/solution/testing-quality",
+  },
+  {
+    id: 2,
+    serviceName: "Data Warehouse",
+    link: "/solution/dataware-house",
+  },
+  {
+    id: 3,
+    serviceName: "Business Intelligence (BI)",
+    link: "/services/networking-services",
+  },
+  {
+    id: 4,
+    serviceName: " eBusiness",
+    link: "/services/staffing-services",
+  }
+];
 export default function Header() {
   return (
     <div>
@@ -21,55 +64,39 @@ export default function Header() {
                 id="collasible-nav-dropdown"
                 eventkey={1}
               >
-                <NavDropdown.Item
-                  as={Link}
-                  to="/services/consulting-services"
-                  className="text-decoration-none"
-                  eventkey={2}
-                >
-                  Consulting Services
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/services/database-services"
-                  className="text-decoration-none"
-                  eventkey={3}
-                >
-                  Database Services
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/services/networking-services"
-                  className="text-decoration-none"
-                  eventkey={4}
-                >
-                  Networking Services
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/services/staffing-services"
-                  className="text-decoration-none"
-                  eventkey={5}
-                >
-                  Staffing Services
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/services/testing-services"
-                  className="text-decoration-none"
-                  eventkey={6}
-                >
-                  Testing Services
-                </NavDropdown.Item>
+                {NService.map((NavService) => {
+                  return (
+                    <NavDropdown.Item
+                      as={Link}
+                      to={NavService.SLink}
+                      className="text-decoration-none"
+                      eventkey={2}
+                      key={NavService.id}
+                    >
+                      {NavService.SName}
+                    </NavDropdown.Item>
+                  );
+                })}
               </NavDropdown>
-              <Nav.Link
-                as={Link}
-                to="/services/testing-services"
-                className="text-decoration-none"
-                eventkey={7}
+              <NavDropdown
+                title="Solution"
+                id="collasible-nav-dropdown"
+                eventkey={2}
               >
-                Solutions
-              </Nav.Link>
+                {NSolution.map((NavSolution) => {
+                  return (
+                    <NavDropdown.Item
+                      as={Link}
+                      to={NavSolution.link}
+                      className="text-decoration-none"
+                      eventkey={2}
+                      key={NavSolution.id}
+                    >
+                      {NavSolution.serviceName}
+                    </NavDropdown.Item>
+                  );
+                })}
+              </NavDropdown>
               <NavDropdown
                 title="Training"
                 id="collasible-nav-dropdown"
