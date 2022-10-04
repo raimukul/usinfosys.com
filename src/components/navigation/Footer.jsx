@@ -43,12 +43,12 @@ const ftSolution = [
   {
     id: 31,
     serviceName: "Testing and Quality Control",
-    link: "/services/consulting-services",
+    link: "/solution/testing-quality",
   },
   {
     id: 32,
     serviceName: "Data Warehouse",
-    link: "/services/database-services",
+    link: "/solution/dataware-house",
   },
   {
     id: 33,

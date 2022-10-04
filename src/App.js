@@ -12,6 +12,8 @@ import TestingServices from "./components/services/TestingServices";
 import WhyJoinUS from "./components/services/WhyJoinUs";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
+import TestingandQualityControl from "./components/solutions/TestingandQualityControl";
+import DataWarehouse from "./components/solutions/DataWarehouse";
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
           <Route path="/services/networking-services" element={<NetworkingServices />} />
           <Route path="/services/staffing-services" element={<StaffingServices />} />
           <Route path="/services/testing-services" element={<TestingServices />} />
+          <Route path="/solution/testing-quality" element={<TestingandQualityControl />} />
+          <Route path="/solution/dataware-house" element={<DataWarehouse/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
