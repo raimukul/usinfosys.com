@@ -7,7 +7,6 @@ import {
   Grid,
   ListItem,
   ListItemAvatar,
-  ListItemText,
   Typography,
 } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
