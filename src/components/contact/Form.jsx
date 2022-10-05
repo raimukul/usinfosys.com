@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import instance from "../../axios";
 import {
   Button,
   Card,
@@ -17,9 +18,28 @@ import { Col, Image, Row } from "react-bootstrap";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function Contact() {
-  const [country, setCountry] = React.useState("");
-  const handleChange = (event) => {
-    setCountry(event.target.value);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [country, setCountry] = useState("");
+  const [subject, setSubject] = useState("");
+  const [cmessage, setCmessage] = useState("");
+
+  console.log(name, email, mobile, country, subject, cmessage);
+
+  const submit = async (e) => {
+    e.preventDefault();
+
+    try {
+      if ( name && email && /^\d{10}$/.test(mobile) && country && subject && cmessage) {
+        const res = await instance.post("/contact", {name, email, mobile, country, subject, cmessage });
+        window.alert(res.data?.message);
+      } else {
+        window.alert("Please fill all details");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
   };
   return (
     <div>
@@ -34,86 +54,104 @@ export default function Contact() {
                 Thank you for your interest in American Info Systems Inc..
                 Please look for the category that best fits your needs:
               </Typography>
-              <Row>
-                <Col md="6" className="pt-2">
-                  <TextField className="w-100" label="Name" required />
-                </Col>
-                <Col md="6" className="pt-2">
-                  <TextField className="w-100" label="Email" required />
-                </Col>
-              </Row>
-              <Row className="pt-2">
-                <Col md="6" className="pt-2">
-                  <TextField
-                    onInput={(e) => {
-                      e.target.value = Math.max(0, parseInt(e.target.value))
-                        .toString()
-                        .slice(0, 10);
-                    }}
-                    className="w-100"
-                    label="Phone"
-                    type="number"
-                    required
-                  />
-                </Col>
-                <Col md="6" className="pt-2">
-                  <FormControl className="w-100" required>
-                    <InputLabel id="demo-simple-select-helper-label">
-                      Country
-                    </InputLabel>
-                    <Select
-                      labelId="demo-simple-select-helper-label"
-                      id="demo-simple-select-helper"
-                      value={country}
-                      label="Country"
-                      onChange={handleChange}
-                    >
-                      <MenuItem value="">
-                        <em>None</em>
-                      </MenuItem>
-                      <MenuItem value={1}>USA</MenuItem>
-                      <MenuItem value={2}>India</MenuItem>
-                    </Select>
-                    <FormHelperText>
-                      Please choose service country.
-                    </FormHelperText>
-                  </FormControl>
-                </Col>
-              </Row>
-              <Row>
-                <Col className="pt-3">
-                  <TextField
-                    id="outlined-textarea"
-                    label="Subject"
-                    placeholder="Please give heading for your querry."
-                    multiline
-                    required
-                    className="w-100"
-                  />
-                </Col>
-              </Row>
-              <Row>
-                <Col className="pt-3">
-                  <TextField
-                    id="outlined-multiline-static"
-                    label="Message"
-                    placeholder="Please elaborate your querry to understand your querry."
-                    multiline
-                    rows={4}
-                    required
-                    className="w-100"
-                  />
-                </Col>
-              </Row>
-              <div className="pt-3">
+              <form onSubmit={(e) => submit(e)}>
+                <Row>
+                  <Col md="6" className="pt-2">
+                    <TextField
+                      className="w-100"
+                      label="Name"
+                      required
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                  </Col>
+                  <Col md="6" className="pt-2">
+                    <TextField
+                      className="w-100"
+                      label="Email"
+                      required
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </Col>
+                </Row>
+                <Row className="pt-2">
+                  <Col md="6" className="pt-2">
+                    <TextField
+                      onInput={(e) => {
+                        e.target.value = Math.max(0, parseInt(e.target.value))
+                          .toString()
+                          .slice(0, 10);
+                      }}
+                      className="w-100"
+                      label="Phone"
+                      type="number"
+                      required
+                      onChange={(e) => setMobile(e.target.value)}
+                    />
+                  </Col>
+                  <Col md="6" className="pt-2">
+                    <FormControl className="w-100" required>
+                      <InputLabel id="demo-simple-select-helper-label">
+                        Country
+                      </InputLabel>
+                      <Select
+                        labelId="demo-simple-select-helper-label"
+                        id="demo-simple-select-helper"
+                        value={country}
+                        label="Country"
+                        // onChange={handleChange}
+                        onChange={(e) => setCountry(e.target.value)}
+                      >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
+                        <MenuItem value="USA">USA</MenuItem>
+                        <MenuItem value="India">India</MenuItem>
+                      </Select>
+                      <FormHelperText>
+                        Please choose service country.
+                      </FormHelperText>
+                    </FormControl>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className="pt-3">
+                    <TextField
+                      id="outlined-textarea"
+                      label="Subject"
+                      placeholder="Please give heading for your querry."
+                      multiline
+                      required
+                      className="w-100"
+                      onChange={(e) => setSubject(e.target.value)}
+                    />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className="pt-3">
+                    <TextField
+                      id="outlined-multiline-static"
+                      label="Message"
+                      placeholder="Please elaborate your querry to understand your querry."
+                      multiline
+                      rows={4}
+                      required
+                      className="w-100"
+                      onChange={(e) => setCmessage(e.target.value)}
+                    />
+                  </Col>
+                </Row>
+                <div className="pt-3">
                 <Button
                   variant="contained"
                   className="text-left"
                   endIcon={<SendIcon />}
+                  type="submit"
                 >
                   Send
                 </Button>
               </div>
+              </form>
+          
             </Grid>
             <Grid xs={12} md={4}>
               <iframe
