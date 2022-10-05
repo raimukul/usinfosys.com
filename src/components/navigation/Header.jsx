@@ -60,7 +60,7 @@ export default function Header() {
             <img
               src="/Logo_USInfoSys.png"
               width="300"
-              height="100"
+              height="67"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
