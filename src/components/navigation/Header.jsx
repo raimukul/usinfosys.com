@@ -51,10 +51,19 @@ const NSolution = [
 export default function Header() {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" className="bg_header">
         <Container>
-          <Navbar.Brand as={Link} to="/">
+          {/* <Navbar.Brand as={Link} to="/">
             American Info Systems
+          </Navbar.Brand> */}
+           <Navbar.Brand href="#home">
+            <img
+              src="/Logo_USInfoSys.png"
+              width="300"
+              height="100"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
