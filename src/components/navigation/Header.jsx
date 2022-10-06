@@ -40,12 +40,12 @@ const NSolution = [
   {
     id: 3,
     serviceName: "Business Intelligence (BI)",
-    link: "/services/networking-services",
+    link: "/solution/business-intelligence",
   },
   {
     id: 4,
-    serviceName: " eBusiness",
-    link: "/services/staffing-services",
+    serviceName: " E-business",
+    link: "/solution/e-business",
   }
 ];
 export default function Header() {
@@ -56,7 +56,8 @@ export default function Header() {
           {/* <Navbar.Brand as={Link} to="/">
             American Info Systems
           </Navbar.Brand> */}
-           <Navbar.Brand href="#home">
+           <Navbar.Brand  as={Link}
+                      to='/'>
             <img
               src="/Logo_USInfoSys.png"
               width="300"

@@ -114,7 +114,7 @@ export default function TestingandQualityControl() {
           <div className="row row align-items-center">
             <div className="col-lg-5 offset-lg-1 order-lg-1">
               <img
-                src="../networking/Testing and Quality Control.svg"
+                src="../assests/solution/Testing and Quality Control.svg"
                 className="img-fluid"
                 alt="Web Development"
               ></img>

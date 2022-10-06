@@ -53,12 +53,12 @@ const ftSolution = [
   {
     id: 33,
     serviceName: "Business Intelligence (BI)",
-    link: "/services/networking-services",
+    link: "/solution/business-intelligence",
   },
   {
     id: 34,
-    serviceName: " eBusiness",
-    link: "/services/staffing-services",
+    serviceName: " E-business",
+    link: "/solution/e-business",
   },
 ];
 

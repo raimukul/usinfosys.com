@@ -10,7 +10,7 @@ export default function DataWarehouse() {
           <div className="row row align-items-center">
             <div className="col-lg-5 offset-lg-1 order-lg-1">
               <img
-                src="../database/DataWarehoue.svg"
+                src="../assests/solution/DataWarehoue.svg"
                 className="img-fluid"
                 alt="Web Development"
               ></img>
