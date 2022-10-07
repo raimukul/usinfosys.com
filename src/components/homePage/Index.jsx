@@ -1,11 +1,11 @@
 import React from 'react'
-import SwipeableTextMobileStepper from './SwipeableTextMobileStepper'
+import Carousel from './Carousel'
 import Testimonial from './Testimonial'
 
 export default function Index() {
   return (
     <div>
-      <SwipeableTextMobileStepper/>
+      <Carousel/>
       <Testimonial/>
     </div>
   )

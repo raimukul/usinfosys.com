@@ -30,7 +30,7 @@ const images = [
   },
 ];
 
-function SwipeableTextMobileStepper() {
+function Carousel() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -48,7 +48,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Container>
+    <div className="container">
       <Box>
         {/* <Paper
         elevation={0}
@@ -118,8 +118,8 @@ function SwipeableTextMobileStepper() {
           }
         />
       </Box>
-    </Container>
+    </div>
   );
 }
 
-export default SwipeableTextMobileStepper;
+export default Carousel;

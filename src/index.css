@@ -37,3 +37,24 @@
 .bg_header{
   background: -webkit-linear-gradient( 90deg, rgb(0 150 136 / 51%) 0%, #dee2e6 100% );
 }
+.carousel-inner {
+  height: 538px;
+}
+
+.carousel-control-prev {
+  height: 50px;
+  left: unset !important;
+  position: fixed !important;
+  top: -5px !important;
+  right: 50%;
+  color: gray !important;
+}
+
+.carousel-control-next {
+  height: 50px;
+  right: unset !important;
+  position: fixed !important;
+  top: -5px !important;
+  left: 50%;
+  color: gray !important;
+}
