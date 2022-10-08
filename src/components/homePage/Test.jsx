@@ -1,194 +1,86 @@
+import { Card, Grid, Rating, Typography } from "@mui/material";
 import React from "react";
-import './Test.css'
+import Carousel from "react-bootstrap/Carousel";
+import "./Test.css";
+
+const testimonialData = [
+  {
+    id: 1,
+    imgLink:
+      "https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=8",
+    name: "Robert Garrison",
+    alt: "Robert Garrison image",
+    designation: "Android Developer",
+    comment:
+      "I made bacck the purchase price in just 48 hours! Thank you for making it pain less, pleasant. The service was execellent. I will refer everyone I know.",
+  },
+  {
+    id: 2,
+    imgLink:
+      "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    name: "Jeffery Kennan",
+    alt: "Jeffery Kennan image",
+    designation: "Full Stack Developer",
+    comment:
+      " Really good, you have saved our business! I made bacck the purchase price in just 48 hours! man, this thing is getting better and better as I learn more about it.",
+  },
+  {
+    id: 3,
+    imgLink:
+      "https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Issac Maxwell",
+    alt: "Issac Maxwell image",
+    designation: "Finance Director",
+    comment:
+      " Account keeper is the most valuable business research we have EVER purchased. Without electrician, we would ahave gone bankrupt by now.",
+  },
+];
 
 export default function Test() {
   return (
     <div>
       <div className="container">
-        <div
-          className="accordion d-flex justify-content-center align-items-center height"
-          id="accordionExample"
-        >
-          <div className="row">
-            <div className="col-md-6">
-              <div className="p-3">
-                <ul className="testimonial-list">
-                  <li>
-                    <div
-                      className="card p-3"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <div className="d-flex flex-row align-items-center">
-                        <img
-                          src="https://i.imgur.com/G1pXs7D.jpg"
-                          width="50"
-                          className="rounded-circle"
-                        />
-
-                        <div className="d-flex flex-column ml-2">
-                          <span className="font-weight-normal">
-                            Milton Austin
-                          </span>
-                          <span>Sales Manager, Stack</span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div
-                      className="card p-3"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <div className="d-flex flex-row align-items-center">
-                        <img
-                          src="https://i.imgur.com/udGH5tO.jpg"
-                          width="50"
-                          className="rounded-circle"
-                        />
-
-                        <div className="d-flex flex-column ml-2">
-                          <span className="font-weight-normal">
-                            John Reeves
-                          </span>
-                          <span>Head of Sales, Asana</span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div
-                      className="card p-3"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <div className="d-flex flex-row align-items-center">
-                        <img
-                          src="https://i.imgur.com/Uz4FjGZ.jpg"
-                          width="50"
-                          className="rounded-circle"
-                        />
-
-                        <div className="d-flex flex-column ml-2">
-                          <span className="font-weight-normal">
-                            Luke Harper
-                          </span>
-                          <span>Sales Team Lead,Sketch</span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-md-6">
-              <div className="p-3 testimonials-margin">
-                <div
-                  id="collapseOne"
-                  className="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body">
-                    <h4>It was a great experience</h4>
-                    <div className="ratings">
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                    </div>
-
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  id="collapseTwo"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body">
-                    <h4>Thanks for this great service</h4>
-                    <div className="ratings">
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                    </div>
-
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  id="collapseThree"
-                  className="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body">
-                    <h4>You all are awesome thanks alot</h4>
-                    <div className="ratings">
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                    </div>
-
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Card className="p-2" >
+        <Typography variant="h4" color="orange" pt={2} pb={5} align="center">
+          What Our Clients Say
+        </Typography>
+        <Typography variant="h6" color="" pt={2} pb={2}>
+          We are really fortunate to have developed strong relationships with
+          many of our customers. And we've developed genuine friendships with
+          them in addition to our job relationships. Here are their comments
+          regarding us.
+        </Typography>
+        <Carousel className="h-auto pb-3 pt-3" controls={false}>
+          {testimonialData.map((TData) => {
+            return (
+              <Carousel.Item interval={1000} key={TData.id}>
+                <Grid container spacing={2} justify="space-between">
+                  <Grid item sm={12} md={4} className="m-auto">
+                    <img
+                      src={TData.imgLink}
+                      alt={TData.alt}
+                      className="w-100 display-block ml-auto mr-auto"
+                    ></img>
+                  </Grid>
+                  <Grid item sm={12} md={8} className="m-auto">
+                    <figure className="text-center">
+                      <Rating name="read-only" value={4} readOnly />
+                      <blockquote className="blockquote">
+                        <p>{TData.comment}</p>
+                      </blockquote>
+                      <figcaption className="blockquote-footer">
+                        <cite title="Source Title">{TData.name}</cite>
+                        <br />
+                        <cite title="Source Title">{TData.designation}</cite>
+                      </figcaption>
+                    </figure>
+                  </Grid>
+                </Grid>
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
+        </Card>
       </div>
     </div>
   );

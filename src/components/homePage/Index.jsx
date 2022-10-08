@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <div>
       <Carousel/>
-      {/* <Test/> */}
+      <Test/>
       <Testimonial/>
     </div>
   )

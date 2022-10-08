@@ -1,27 +1,9 @@
-
-
-.card {
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+.testimonial-slider .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: #dc3545;
+  border-radius: 100%;
 }
-
-/* .card:hover {
-  background-color: #eee;
-} */
-
-.ratings i {
-  color: orange;
-}
-
-.testimonial-list {
-  list-style: none;
-}
-
-.testimonial-list li {
-  margin-bottom: 20px;
-}
-
-.testimonials-margin {
-  margin-top: -19px;
+.testimonial-slider {
+  padding: 10px 0px 40px;
 }

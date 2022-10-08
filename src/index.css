@@ -58,3 +58,9 @@
   left: 50%;
   color: gray !important;
 }
+.carousel-inner{
+  height: auto!important;
+}
+.testimonialbg{
+  background: linear-gradient(135deg, #1a4223, #5ee95e);
+}
