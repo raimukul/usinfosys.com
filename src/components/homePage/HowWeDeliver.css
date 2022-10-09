@@ -27,8 +27,8 @@
   }
   
   .card {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     transform-style: preserve-3d;
     perspective: 500px;
     border: none;

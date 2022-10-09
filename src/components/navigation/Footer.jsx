@@ -14,54 +14,76 @@ import "./Navigation.css";
 
 const ftServices = [
   {
-    id: 11,
+    id: 1,
     serviceName: "Consulting Services",
     link: "/services/consulting-services",
   },
   {
-    id: 22,
+    id: 2,
     serviceName: "Database Services",
     link: "/services/database-services",
   },
   {
-    id: 33,
+    id: 3,
     serviceName: "Networking Services",
     link: "/services/networking-services",
   },
   {
-    id: 44,
+    id: 4,
     serviceName: "Staffing Services",
     link: "/services/staffing-services",
   },
   {
-    id: 55,
+    id: 5,
     serviceName: "Testing Services",
     link: "/services/testing-services",
   },
 ];
 const ftSolution = [
   {
-    id: 31,
+    id: 6,
     serviceName: "Testing and Quality Control",
     link: "/solution/testing-quality",
   },
   {
-    id: 32,
+    id: 7,
     serviceName: "Data Warehouse",
     link: "/solution/dataware-house",
   },
   {
-    id: 33,
+    id: 8,
     serviceName: "Business Intelligence (BI)",
     link: "/solution/business-intelligence",
   },
   {
-    id: 34,
+    id: 9,
     serviceName: " E-business",
     link: "/solution/e-business",
   },
 ];
 
+const ftLinks = [
+  {
+    id: 10,
+    serviceName: "Important link 1",
+    link: "/solution/testing-quality",
+  },
+  {
+    id: 32,
+    serviceName: "Important link 2",
+    link: "/solution/dataware-house",
+  },
+  {
+    id: 33,
+    serviceName: "Important link 3",
+    link: "/solution/business-intelligence",
+  },
+  {
+    id: 34,
+    serviceName: "Important link 4",
+    link: "/solution/e-business",
+  },
+];
 export default function Footer() {
   return (
     <div>
@@ -124,15 +146,15 @@ export default function Footer() {
                   SOLUTIONS
                 </ListItem>
                 <Divider />
-                {ftSolution.map((SolType) => {
+                {ftSolution.map((ImpLink) => {
                   return (
                     <Link
-                      to={SolType.link}
-                      key={SolType.id}
+                      to={ImpLink.link}
+                      key={ImpLink.id}
                       className="aFooter"
                     >
-                      <ListItem key={SolType.id}>
-                        {SolType.serviceName}
+                      <ListItem key={ImpLink.id}>
+                        {ImpLink.serviceName}
                       </ListItem>
                     </Link>
                   );
@@ -148,13 +170,22 @@ export default function Footer() {
                     textDecoration: "none",
                   }}
                 >
-                  TRAINING
+                  Important Links
                 </ListItem>
                 <Divider />
-                <ListItem sx={{ color: "#f18b32" }}>DBA Training</ListItem>
-                <ListItem sx={{ color: "#f18b32" }}>
-                  Software QA Training
-                </ListItem>
+                {ftLinks.map((ImpLink) => {
+                  return (
+                    <Link
+                      to={ImpLink.link}
+                      key={ImpLink.id}
+                      className="aFooter"
+                    >
+                      <ListItem key={ImpLink.id}>
+                        {ImpLink.serviceName}
+                      </ListItem>
+                    </Link>
+                  );
+                })}
               </List>
             </Grid>
           </Grid>
