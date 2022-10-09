@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif!important;
 }
 
 .bg_footer { 
@@ -62,5 +62,5 @@
   height: auto!important;
 }
 .testimonialbg{
-  background: linear-gradient(135deg, #1a4223, #5ee95e);
+  background: -webkit-linear-gradient( 90deg, rgb(0 150 136 / 51%) 0%, #dee2e6 100% );
 }

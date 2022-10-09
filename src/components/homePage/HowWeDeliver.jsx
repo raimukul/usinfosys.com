@@ -1,8 +1,8 @@
-import { Typography } from "@mui/material";
 import React from "react";
-import "./Testimonial.css";
+import "./HowWeDeliver.css";
+import { Typography } from "@mui/material";
 
-const testimonialData = [
+const deliveryData = [
   {
     id: 1,
     imgLink:
@@ -35,15 +35,16 @@ const testimonialData = [
   },
 ];
 
-export default function Testimonial() {
+export default function HowWeDeliver() {
   return (
     <div>
-      <div className="container containert pt-5 pb-5">
+      <div className="jumbotron howdeliver"> 
+      <div className="container pt-5 pb-5">
         <Typography variant="h4" color="white" pt={2} pb={5} align="center">
           About Us
         </Typography>
         <div className="row">
-          {testimonialData.map((TData) => {
+          {deliveryData.map((TData) => {
             return (
               <div className="col-lg-4" key={TData.id}>
                 <div className="card">
@@ -66,6 +67,7 @@ export default function Testimonial() {
             );
           })}
         </div>
+      </div>
       </div>
     </div>
   );
