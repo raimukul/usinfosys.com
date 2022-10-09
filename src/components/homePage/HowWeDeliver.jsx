@@ -6,32 +6,32 @@ const deliveryData = [
   {
     id: 1,
     imgLink:
-      "https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=8",
-    name: "Robert Garrison",
+      "./assests/homepage/management.svg",
+    name: "Outstanding Management",
     alt: "Robert Garrison image",
     designation: "Android Developer",
     comment:
-      "I made bacck the purchase price in just 48 hours! Thank you for making it pain less, pleasant. The service was execellent. I will refer everyone I know.",
+      "The management of AIS has extensive knowledge of every area of the IT project support and staffing industries, spanning many years. The entire staff is structured and laser-focused on proactively providing you and your company with outstanding services.",
   },
   {
     id: 2,
     imgLink:
-      "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-    name: "Jeffery Kennan",
+      "./assests/homepage/relationship1.svg",
+    name: "Outstanding Relationships",
     alt: "Jeffery Kennan image",
     designation: "Full Stack Developer",
     comment:
-      " Really good, you have saved our business! I made bacck the purchase price in just 48 hours! man, this thing is getting better and better as I learn more about it.",
+      " In order to offer you better services, we build strong relationships with you and your company. Through these ties, we are able to learn about your business, goals, and needs, which enables us to offer you accurate and timely services. We listen carefully and pose smart questions.",
   },
   {
     id: 3,
     imgLink:
-      "https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    name: "Issac Maxwell",
+      "./assests/homepage/talent.svg",
+    name: "Outstanding Talent",
     alt: "Issac Maxwell image",
     designation: "Finance Director",
     comment:
-      " Account keeper is the most valuable business research we have EVER purchased. Without electrician, we would ahave gone bankrupt by now.",
+      "Our compelling value proposition draws top talent. Our consultants are confident in their capacity to function successfully and efficiently in actual business settings because they have years of real-world experience in their respective IT specialties. They are extremely talented team members who put the needs of their clients first.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function HowWeDeliver() {
       <div className="jumbotron howdeliver"> 
       <div className="container pt-5 pb-5">
         <Typography variant="h4" color="white" pt={2} pb={5} align="center">
-          About Us
+        HOW WE ACHIEVE
         </Typography>
         <div className="row">
           {deliveryData.map((TData) => {
@@ -55,7 +55,7 @@ export default function HowWeDeliver() {
                       className="profile"
                     ></img>
                     <div className="pt-3 text-uppercase name">{TData.name}</div>
-                    <div className="designation">{TData.designation}</div>
+                    {/* <div className="designation">{TData.designation}</div> */}
                   </div>
                   <div className="face back-face">
                     <span className="fas fa-quote-left"></span>

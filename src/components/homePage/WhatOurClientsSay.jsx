@@ -11,6 +11,7 @@ const testimonialData = [
     name: "Robert Garrison",
     alt: "Robert Garrison image",
     designation: "Android Developer",
+    rating: 4,
     comment:
       "I made bacck the purchase price in just 48 hours! Thank you for making it pain less, pleasant. The service was execellent. I will refer everyone I know.",
   },
@@ -21,6 +22,7 @@ const testimonialData = [
     name: "Jeffery Kennan",
     alt: "Jeffery Kennan image",
     designation: "Full Stack Developer",
+    rating: 5,
     comment:
       " Really good, you have saved our business! I made bacck the purchase price in just 48 hours! man, this thing is getting better and better as I learn more about it.",
   },
@@ -31,6 +33,7 @@ const testimonialData = [
     name: "Issac Maxwell",
     alt: "Issac Maxwell image",
     designation: "Finance Director",
+    rating: 5,
     comment:
       " Account keeper is the most valuable business research we have EVER purchased. Without electrician, we would ahave gone bankrupt by now.",
   },
@@ -65,7 +68,7 @@ export default function WhatOurClientsSay() {
                     </Grid>
                     <Grid item sm={12} md={8} className="m-auto">
                       <figure className="text-center">
-                        <Rating name="read-only" value={4} readOnly />
+                        <Rating name="read-only" value={TData.rating} readOnly />
                         <blockquote className="blockquote">
                           <p>{TData.comment}</p>
                         </blockquote>
