@@ -16,6 +16,8 @@ import TestingandQualityControl from "./components/solutions/TestingandQualityCo
 import DataWarehouse from "./components/solutions/DataWarehouse";
 import BusinessIntelligence from "./components/solutions/BusinessIntelligence";
 import EBusiness from "./components/solutions/EBusiness";
+import QaTraining from "./components/training/QaTraining";
+import DbaTraining from "./components/training/DbaTraining";
 
 export default function App() {
   return (
@@ -34,6 +36,8 @@ export default function App() {
           <Route path="/solution/dataware-house" element={<DataWarehouse/>} />
           <Route path="/solution/business-intelligence" element={<BusinessIntelligence/>} />
           <Route path="/solution/e-business" element={<EBusiness/>} />
+          <Route path="/training/qa-training" element={<QaTraining/>} />
+          <Route path="/training/dba-training" element={<DbaTraining/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

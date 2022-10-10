@@ -48,6 +48,19 @@ const NSolution = [
     link: "/solution/e-business",
   }
 ];
+const NTraining = [
+  {
+    id: 1,
+    trainingName: "DBA Training",
+    link: "/training/dba-training",
+  },
+  {
+    id: 2,
+    trainingName: "Software QA Training",
+    link: "/training/qa-training",
+  }
+];
+
 export default function Header() {
   return (
     <div>
@@ -112,23 +125,19 @@ export default function Header() {
                 id="collasible-nav-dropdown"
                 eventkey={8}
               >
-                <NavDropdown.Item
-                  as={Link}
-                  to="/testing-services"
-                  className="text-decoration-none"
-                  eventkey={9}
-                >
-                  DBA Training
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  as={Link}
-                  to="/testing-services"
-                  className="text-decoration-none"
-                  eventkey={10}
-                >
-                  Software QA Training
-                </NavDropdown.Item>
+                 {NTraining.map((NavTraining) => {
+                  return (
+                    <NavDropdown.Item
+                      as={Link}
+                      to={NavTraining.link}
+                      className="text-decoration-none"
+                      eventkey={2}
+                      key={NavTraining.id}
+                    >
+                      {NavTraining.trainingName}
+                    </NavDropdown.Item>
+                  );
+                })}
               </NavDropdown>
               <NavDropdown
                 title="Careers"
