@@ -101,9 +101,9 @@ export default function Footer() {
               <List>
                 <ListItem>
                   <img
-                    src="../banner/Logo4.png"
+                    src="../assests/logo/American info system logo_square.svg"
                     alt="logo"
-                    className="w-75 m-auto"
+                    className="w-50 m-auto"
                   ></img>
                 </ListItem>
                 <Divider />
