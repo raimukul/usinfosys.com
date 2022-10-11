@@ -146,7 +146,7 @@ export default function Header() {
               >
                 <NavDropdown.Item
                   as={Link}
-                  to="/testing-services"
+                  to="/career/why-join-us"
                   className="text-decoration-none"
                   eventkey={20}
                 >
@@ -155,7 +155,7 @@ export default function Header() {
 
                 <NavDropdown.Item
                   as={Link}
-                  to="/testing-services"
+                  to="/career/current-opening"
                   className="text-decoration-none"
                   eventkey={21}
                 >
@@ -164,7 +164,7 @@ export default function Header() {
 
                 <NavDropdown.Item
                   as={Link}
-                  to="/testing-services"
+                  to="/career/referral"
                   className="text-decoration-none"
                   eventkey={22}
                 >

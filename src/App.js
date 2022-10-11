@@ -9,7 +9,6 @@ import DatabaseServices from "./components/services/DatabaseServices/Index";
 import NetworkingServices from "./components/services/NetworkingServices/Index";
 import StaffingServices from "./components/services/StaffingServices/Index";
 import TestingServices from "./components/services/TestingServices/Index";
-import WhyJoinUS from "./components/services/WhyJoinUs";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import TestingandQualityControl from "./components/solutions/TestingandQualityControl";
@@ -18,6 +17,9 @@ import BusinessIntelligence from "./components/solutions/BusinessIntelligence";
 import EBusiness from "./components/solutions/EBusiness";
 import QaTraining from "./components/training/QaTraining";
 import DbaTraining from "./components/training/DbaTraining";
+import WhyJoinUs from './components/career/WhyJoinUs'
+import ReferralProgram from "./components/career/ReferralProgram";
+import CurrentOpening from "./components/career/CurrentOpening";
 
 export default function App() {
   return (
@@ -26,7 +28,6 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/services" element={<WhyJoinUS />} />
           <Route path="/services/consulting-services" element={<ConsultingServices />} />
           <Route path="/services/database-services" element={<DatabaseServices />} />
           <Route path="/services/networking-services" element={<NetworkingServices />} />
@@ -38,6 +39,9 @@ export default function App() {
           <Route path="/solution/e-business" element={<EBusiness/>} />
           <Route path="/training/qa-training" element={<QaTraining/>} />
           <Route path="/training/dba-training" element={<DbaTraining/>} />
+          <Route path="/career/why-join-us" element={<WhyJoinUs/>} />
+          <Route path="/career/current-opening" element={<CurrentOpening/>} />
+          <Route path="/career/referral" element={<ReferralProgram/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
