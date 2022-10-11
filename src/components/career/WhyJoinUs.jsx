@@ -74,7 +74,7 @@ export default function WhyJoinUs() {
             conducive for productivity yet perfectly offers the ideal work-life
             balance.
             <br />
-            <b>For Students after graduation –</b>
+            <b>For Students after graduation –</b><br/>
             Real-life work experience is more important than ever for computer
             science majors, but finding a well-run, high-value internship
             program that results in a full-time IT job post-graduation can be
