@@ -1,0 +1,11 @@
+.btn-ques{
+    margin: 0rem!important;
+    font-size: 1.1rem!important;
+    background-color: transparent!important;
+    color: indigo;
+    padding: 0.4rem 1rem!important;
+}
+.btn-ques:hover {
+    color: #c21212!important;
+    background-color: #fafafa00!important;
+}
