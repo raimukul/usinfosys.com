@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import { MDBDataTableV5 } from "mdbreact";
 import firebase from "../../firebaseConfig";
-import './career.css'
+import "./career.css";
+import { Typography } from "@mui/material";
+import OpeningBanner from "./OpeningBanner";
+
 export default function CurrentOpening() {
   const [datatable, setDatatable] = React.useState({});
 
   useEffect(() => {
-    const columns= [
+    const columns = [
       {
         label: "Job Position/Title",
         field: "title",
@@ -39,38 +42,44 @@ export default function CurrentOpening() {
         width: 150,
       },
     ];
-      firebase
-        .app("main")
-        .firestore()
-        .collection("Jobs")
-        .get()
-        .then((dd) => {
-          const rows = [];
-          dd.forEach((d) => {
-            const goes = {
-              title: `${d.data().title}`,
-              location: `${d.data().location}`,
-              country: `${d.data().country}`,
-              jobType: `${d.data().jobType}`,
-              jobLink: (
-                <a
-                  rel="noopener noreferrer"
-                  href={d.data().jobLink}
-                  target="_blank"
-                >
-                  <button className="btn-ques">{/* <FaDownload /> */} Apply</button>
-                </a>
-              ),
-            };
-            rows.push(goes);
-          });
-
-          setDatatable({ columns, rows });
+    firebase
+      .app("main")
+      .firestore()
+      .collection("Jobs")
+      .get()
+      .then((dd) => {
+        const rows = [];
+        dd.forEach((d) => {
+          const goes = {
+            title: `${d.data().title}`,
+            location: `${d.data().location}`,
+            country: `${d.data().country}`,
+            jobType: `${d.data().jobType}`,
+            jobLink: (
+              <a
+                rel="noopener noreferrer"
+                href={d.data().jobLink}
+                target="_blank"
+              >
+                <button className="btn-ques">
+                  {/* <FaDownload /> */} Apply
+                </button>
+              </a>
+            ),
+          };
+          rows.push(goes);
         });
+
+        setDatatable({ columns, rows });
+      });
   }, []);
 
   return (
-    <div className="container pt-2">
+    <div>
+      <OpeningBanner/>
+    
+    <div className="container pt-3">
+
       <MDBDataTableV5
         searchPlaceholder="Search Question Papers"
         hover
@@ -84,6 +93,7 @@ export default function CurrentOpening() {
         className="font1"
         materialSearch
       />
+    </div>
     </div>
   );
 }
