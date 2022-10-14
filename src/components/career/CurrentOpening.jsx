@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { MDBDataTableV5 } from "mdbreact";
 import firebase from "../../firebaseConfig";
 import "./career.css";
-import { Typography } from "@mui/material";
 import OpeningBanner from "./OpeningBanner";
 
 export default function CurrentOpening() {
