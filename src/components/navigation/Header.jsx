@@ -72,7 +72,7 @@ export default function Header() {
            <Navbar.Brand  as={Link}
                       to='/'>
             <img
-              src="/Logo_USInfoSys.png"
+              src="/Logo_USInfoSys.webp"
               width="300"
               height="67"
               className="d-inline-block align-top"
