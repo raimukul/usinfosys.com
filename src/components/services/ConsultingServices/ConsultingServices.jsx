@@ -21,7 +21,7 @@ export default function ConsultingServices() {
             <Card>
               <img
                 className="w-50 rounded mx-auto d-block"
-                src="../services/technology.png"
+                src="../services/technology.webp"
                 alt="1q"
               ></img>
               <Typography className="text-center pt-2 pb-2">
@@ -33,7 +33,7 @@ export default function ConsultingServices() {
             <Card>
               <img
                 className="w-50 rounded mx-auto d-block"
-                src="../services/risks.png"
+                src="../services/risks.webp"
                 alt="ef"
               ></img>
               <Typography className="text-center pt-2 pb-2">
@@ -45,7 +45,7 @@ export default function ConsultingServices() {
             <Card>
               <img
                 className="w-50 rounded mx-auto d-block"
-                src="../services/infrastructure.png"
+                src="../services/infrastructure.webp"
                 alt="rgtg"
               ></img>
               <Typography className="text-center pt-2 pb-2">
@@ -57,7 +57,7 @@ export default function ConsultingServices() {
             <Card>
               <img
                 className="w-50 rounded mx-auto d-block"
-                src="../services/information-management.png"
+                src="../services/information-management.webp"
                 alt="gade"
               ></img>
               <Typography className="text-center pt-2 pb-2">
@@ -69,7 +69,7 @@ export default function ConsultingServices() {
             <Card>
               <img
                 className="w-50 rounded mx-auto d-block"
-                src="../services/execution.png"
+                src="../services/execution.webp"
                 alt="asrgtaewg"
               ></img>
               <Typography className="text-center pt-2 pb-2">
@@ -81,7 +81,7 @@ export default function ConsultingServices() {
             <Card>
               <img
                 className="w-50 rounded mx-auto d-block"
-                src="../services/quality-test.png"
+                src="../services/quality-test.webp"
                 alt="asrgtaewg"
               ></img>
               <Typography className="text-center pt-2 pb-2">
