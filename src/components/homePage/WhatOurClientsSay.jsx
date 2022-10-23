@@ -18,7 +18,7 @@ const testimonialData = [
   {
     id: 2,
     imgLink:
-      "../assests/testimonials/test1 (1).jpeg",
+      "../assests/testimonials/test1 (2).jpeg",
     name: "Jeffery Kennan",
     alt: "Jeffery Kennan image",
     designation: "Full Stack Developer",
@@ -29,7 +29,7 @@ const testimonialData = [
   {
     id: 3,
     imgLink:
-      "../assests/testimonials/test1 (1).jpeg",
+      "../assests/testimonials/test1 (3).jpeg",
     name: "Issac Maxwell",
     alt: "Issac Maxwell image",
     designation: "Finance Director",
