@@ -7,7 +7,7 @@ const testimonialData = [
   {
     id: 1,
     imgLink:
-      "https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=8",
+      "../assests/testimonials/test1 (1).jpeg",
     name: "Robert Garrison",
     alt: "Robert Garrison image",
     designation: "Android Developer",
@@ -18,7 +18,7 @@ const testimonialData = [
   {
     id: 2,
     imgLink:
-      "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+      "../assests/testimonials/test1 (1).jpeg",
     name: "Jeffery Kennan",
     alt: "Jeffery Kennan image",
     designation: "Full Stack Developer",
@@ -29,7 +29,7 @@ const testimonialData = [
   {
     id: 3,
     imgLink:
-      "https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "../assests/testimonials/test1 (1).jpeg",
     name: "Issac Maxwell",
     alt: "Issac Maxwell image",
     designation: "Finance Director",
