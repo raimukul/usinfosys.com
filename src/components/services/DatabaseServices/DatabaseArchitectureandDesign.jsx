@@ -19,6 +19,12 @@ export default function DatabaseArchitectureandDesign() {
             </Typography>
             <Divider className="bg-dark w-25" variant="string" />
             <Typography>
+              A Database Architecture is a representation of DBMS design. It
+              helps to design, develop, implement, and maintain the database
+              management system. A DBMS architecture allows dividing the
+              database system into individual components that can be
+              independently modified, changed, replaced, and altered.
+              <br />
               AIS can help you in designing your physical as well as logical
               design of your database. Our consultants have gathered experience
               designing fortune 500 company’s database ranging from 50 GB to 10

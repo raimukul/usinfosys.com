@@ -12,7 +12,7 @@ export default function Banner() {
               <img
                 src="../services/AIS_Consulting_Services.svg"
                 className="img-fluid"
-                alt="Web Development"
+                alt="AIS Consulting Services"
               ></img>
             </div>
             <div className="col-lg-6">
