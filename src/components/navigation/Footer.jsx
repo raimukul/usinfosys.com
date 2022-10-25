@@ -65,8 +65,8 @@ const ftSolution = [
 const ftLinks = [
   {
     id: 10,
-    serviceName: "Important link 1",
-    link: "/solution/testing-quality",
+    serviceName: "Rate Us",
+    link: "/feedback",
   },
   {
     id: 32,

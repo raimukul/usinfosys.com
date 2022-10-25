@@ -20,6 +20,7 @@ import DbaTraining from "./components/training/DbaTraining";
 import WhyJoinUs from './components/career/WhyJoinUs'
 import ReferralProgram from "./components/career/ReferralProgram";
 import CurrentOpening from "./components/career/CurrentOpening";
+import Testimonial from './components/testimonials/Index'
 
 export default function App() {
   return (
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/career/referral" element={<ReferralProgram/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/feedback" element={<Testimonial />} />
         </Routes>
         <Footer />
       </BrowserRouter>
