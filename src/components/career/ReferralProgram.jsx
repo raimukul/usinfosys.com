@@ -87,14 +87,14 @@ export default function ReferralProgram() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
-                className="bg-red"
+                className="bg-headingAccordian"
                 key={testing.id}
               >
                 <Typography variant="h6">
                  {testing.type}
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails className='bg-accordian'>
                 <Typography>{parse(testing.details)}</Typography>
               </AccordionDetails>
             </Accordion>
