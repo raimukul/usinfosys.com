@@ -173,7 +173,7 @@ export default function Header() {
               </NavDropdown>
               <Nav.Link
                 as={Link}
-                to="/testing-services"
+                to="/about"
                 className="text-decoration-none"
                 eventkey={12}
               >

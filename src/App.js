@@ -9,7 +9,7 @@ import DatabaseServices from "./components/services/DatabaseServices/Index";
 import NetworkingServices from "./components/services/NetworkingServices/Index";
 import StaffingServices from "./components/services/StaffingServices/Index";
 import TestingServices from "./components/services/TestingServices/Index";
-import About from "./components/about/About";
+import About from "./components/about/Index";
 import Contact from "./components/contact/Contact";
 import TestingandQualityControl from "./components/solutions/TestingandQualityControl";
 import DataWarehouse from "./components/solutions/DataWarehouse";
@@ -21,6 +21,7 @@ import WhyJoinUs from './components/career/WhyJoinUs'
 import ReferralProgram from "./components/career/ReferralProgram";
 import CurrentOpening from "./components/career/CurrentOpening";
 import Testimonial from './components/testimonials/Index'
+import Error404 from "./components/Error/Error404";
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Testimonial />} />
+          <Route path="*" element={<Error404/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
