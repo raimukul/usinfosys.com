@@ -80,7 +80,7 @@ export default function DbaTraining() {
                 <b>Overview</b>
               </p>
               <Divider className="bg-dark w-25" variant="string" />
-              <Typography className="pt-2" variant="body1">
+              <Typography className="pt-2" variant="body1" component={"span"}>
                 AIS is one of the most trusted training partners of many
                 international corporate and IT Professional for technical
                 training with a special focus on Databases and Cloud
@@ -106,7 +106,7 @@ export default function DbaTraining() {
                 <b> Course Description</b>
               </p>
               <Divider className="bg-dark w-25" variant="string" />
-              <Typography className="pt-2" variant="body1">
+              <Typography className="pt-2" variant="body1" component={"span"}>
                 ‘Oracle Database Administration for Absolute Beginners’ course
                 explains about the basic concepts of Relational Database
                 Management Systems (RDBMS). It will help you to become an Oracle
@@ -122,7 +122,7 @@ export default function DbaTraining() {
               </Typography>
             </div>
 
-            <Typography className="pt-2" variant="body1">
+            <Typography className="pt-2" variant="body1" component={"span"}>
               <b>This would be ideal for</b>
               <List aria-label="contacts">
                 {idealList.map((Nlist) => {

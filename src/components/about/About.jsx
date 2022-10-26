@@ -26,7 +26,7 @@ export default function About() {
   return (
     <div className="container">
       <Card className="p-4">
-        <Typography>
+        <Typography component={"span"}>
           AIS is focused on creating long term customer relationships where a
           true Solution Partnership can be achieved. AIS uses Best Practices
           Methodology in creating Staffing Solutions as well as a wide array of

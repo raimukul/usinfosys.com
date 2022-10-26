@@ -49,7 +49,7 @@ export default function Contact() {
       <Container>
         <Card className="p-3">
           <Grid container spacing={2} className="p-2">
-            <Grid xs={12} md={8} className="p-4">
+            <Grid md={8} className="p-4" item={true}>
               <Typography variant="subtitle1" pb={3}>
                 Thank you for your interest in American Info Systems Inc..
                 Please look for the category that best fits your needs:
@@ -153,7 +153,7 @@ export default function Contact() {
               </form>
           
             </Grid>
-            <Grid xs={12} md={4}>
+            <Grid md={4} item={true}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.689916634392!2d-94.67281728471384!3d38.93106437956555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0ea4bfe400001%3A0x12b6a2fe3cf1f6f5!2s7300%20W%20110th%20St%20%23700%2C%20Overland%20Park%2C%20KS%2066210%2C%20USA!5e0!3m2!1sen!2sin!4v1664558614499!5m2!1sen!2sin"
                 className="w-100 h-100"

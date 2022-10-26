@@ -35,7 +35,7 @@ export default function DataBaseManagement() {
           <Grid item sm={12} md={8}>
             <Typography variant="h5">Database Management </Typography>
             <Divider className="bg-dark w-25" variant="string" />
-            <Typography variant="">
+            <Typography component={"span"}>
               We provide comprehensive database service for following desktop
               and enterprise relational databases:
               <br />

@@ -14,9 +14,9 @@ export default function BackupandRecovery() {
             ></img>
           </Grid>
           <Grid item sm={12} md={8} className="m-auto">
-            <Typography variant="h5">Backup and Recovery</Typography>
+            <Typography variant="h5" component={"span"}>Backup and Recovery</Typography>
             <Divider className="bg-dark w-25" variant="string" />
-            <Typography>
+            <Typography component={"span"}>
               The Back-up and Recovery Service entails one or more AIS’s
               consultants working either On-site or remotely to implement an
               enterprise quality and vendor (Oracle, IBM, Microsoft) recommended

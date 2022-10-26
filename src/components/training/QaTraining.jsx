@@ -101,7 +101,7 @@ export default function QaTraining() {
                 <b>Overview</b>
               </p>
               <Divider className="bg-dark w-25" variant="string" />
-              <Typography className="pt-2" variant="body1">
+              <Typography className="pt-2" variant="body1" component={"span"}>
                 Software testing involves carrying out detailed investigation
                 regarding quality of particular product as well as service which
                 is under scrutiny. This information is basically meant for
@@ -213,7 +213,7 @@ export default function QaTraining() {
               </List>
             </div>
 
-            <Typography className="pt-2" variant="body1">
+            <Typography className="pt-2" variant="body1" component={"span"}>
               <b>This would be ideal for</b>
               <List aria-label="contacts">
                 {idealList.map((Nlist) => {

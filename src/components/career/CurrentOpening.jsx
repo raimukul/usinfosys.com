@@ -80,13 +80,13 @@ export default function CurrentOpening() {
     <div className="container pt-3">
 
       <MDBDataTableV5
-        searchPlaceholder="Search Question Papers"
+        searchplaceholder="Search Question Papers"
         hover
         entriesOptions={[10, 20, 50]}
         entries={10}
         pagesAmount={5}
         data={datatable}
-        pagingDown
+        pagingdown="true"
         searchTop
         searchBottom={false}
         className="font1"

@@ -6,15 +6,12 @@ import {
   Container,
   FormControl,
   FormHelperText,
-  Grid,
   InputLabel,
   MenuItem,
   Select,
-  TextField,
-  Typography,
+  TextField
 } from "@mui/material";
-import { Box } from "@mui/system";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function Form() {

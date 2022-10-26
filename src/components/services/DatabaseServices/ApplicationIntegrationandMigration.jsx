@@ -14,11 +14,11 @@ export default function ApplicationIntegrationandMigration() {
             ></img>
           </Grid>
           <Grid item sm={12} md={8} className="m-auto">
-            <Typography variant="h5">
+            <Typography component={"span"} variant="h5">
               Application Integration and Migration
             </Typography>
             <Divider className="bg-dark w-25" variant="string" />
-            <Typography>
+            <Typography component={"span"} >
               We offer application integration as well as data migration
               services. The integration services are generally advisory in
               nature with an emphasis on educating your development staff on the

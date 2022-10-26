@@ -26,9 +26,9 @@ export default function DatabaseLifeCycleSupport() {
       <Card className="p-2">
         <Grid container spacing={2}>
           <Grid item sm={12} md={8} className="m-auto">
-            <Typography variant="h5">Database Life Cycle Support</Typography>
+            <Typography variant="h5" component={"span"}>Database Life Cycle Support</Typography>
             <Divider className="bg-dark w-25" variant="string" />
-            <Typography>
+            <Typography component={"span"}>
               AIS experienced consultants can be involved at any phase of the
               Database Life Cycle and can help you in deciding to choose the
               right database for your organization depending on your

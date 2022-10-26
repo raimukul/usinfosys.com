@@ -14,11 +14,11 @@ export default function DatabaseArchitectureandDesign() {
             ></img>
           </Grid>
           <Grid item sm={12} md={8} className="m-auto">
-            <Typography variant="h5">
+            <Typography variant="h5" component={"span"}>
               Database Architecture and Design
             </Typography>
             <Divider className="bg-dark w-25" variant="string" />
-            <Typography>
+            <Typography component={"span"}>
               A Database Architecture is a representation of DBMS design. It
               helps to design, develop, implement, and maintain the database
               management system. A DBMS architecture allows dividing the
