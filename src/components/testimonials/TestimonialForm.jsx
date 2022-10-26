@@ -8,7 +8,6 @@ import {
   Typography,
 } from "@mui/material";
 import { Form } from "react-bootstrap";
-import { Container } from "@mui/system";
 import firebase from "../../firebaseConfig";
 import SendIcon from "@mui/icons-material/Send";
 
@@ -17,8 +16,8 @@ export default function TestimonialForm() {
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [rating, setRating] = React.useState("");
-  const [comment, setComment]= React.useState("");
-  console.log(name, email, mobile, rating,comment);
+  const [comment, setComment] = React.useState("");
+  console.log(name, email, mobile, rating, comment);
 
   const submit = (e) => {
     e.preventDefault();
@@ -87,7 +86,7 @@ export default function TestimonialForm() {
                 }}
               />
             </Grid>
-            <Container>
+            <Grid  p={4} md={12}>
               <TextField
                 id="outlined-textarea"
                 label="Your feedback or suggestion"
@@ -96,19 +95,19 @@ export default function TestimonialForm() {
                 fullWidth
                 onChange={(e) => setComment(e.target.value)}
               />
-            </Container>
+            </Grid>
           </Grid>
-       
-        <div className="pt-5 container">
-          <Button
-            variant="contained"
-            className="text-left"
-            endIcon={<SendIcon />}
-            type="submit"
-          >
-            Send
-          </Button>
-        </div>
+
+          <div className="pt-5 container">
+            <Button
+              variant="contained"
+              className="text-left"
+              endIcon={<SendIcon />}
+              type="submit"
+            >
+              Send
+            </Button>
+          </div>
         </Form>
       </Card>
     </div>

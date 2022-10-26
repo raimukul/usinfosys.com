@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import About from "./About";
 import ContractStaffing from "./ContractStaffing";
 import PermanentStaffing from "./PermanentStaffing";
+import Methodologies from "./Methodologies";
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
         <About />
         <ContractStaffing/>
         <PermanentStaffing/>
+        <Methodologies/>
       </div>
     </div>
   );
