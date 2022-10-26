@@ -67,7 +67,7 @@ export default function DbaTraining() {
                 performance and availability of data to users and customers.{" "}
               </p>
               <Link
-                to="/contact"
+                to="/training/enroll"
                 className="btn btn-outline-secondary btn-lg border"
               >
                 Get Enrolled

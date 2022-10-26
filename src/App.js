@@ -17,6 +17,7 @@ import BusinessIntelligence from "./components/solutions/BusinessIntelligence";
 import EBusiness from "./components/solutions/EBusiness";
 import QaTraining from "./components/training/QaTraining";
 import DbaTraining from "./components/training/DbaTraining";
+import EnrollmentForm from "./components/enrollmentForm/Index";
 import WhyJoinUs from './components/career/WhyJoinUs'
 import ReferralProgram from "./components/career/ReferralProgram";
 import CurrentOpening from "./components/career/CurrentOpening";
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/solution/business-intelligence" element={<BusinessIntelligence/>} />
           <Route path="/solution/e-business" element={<EBusiness/>} />
           <Route path="/training/qa-training" element={<QaTraining/>} />
+          <Route path="/training/enroll" element={<EnrollmentForm/>} />
           <Route path="/training/dba-training" element={<DbaTraining/>} />
           <Route path="/career/why-join-us" element={<WhyJoinUs/>} />
           <Route path="/career/current-opening" element={<CurrentOpening/>} />

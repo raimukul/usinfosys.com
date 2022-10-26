@@ -88,7 +88,7 @@ export default function QaTraining() {
                 life saving speed.
               </p>
               <Link
-                to="/contact"
+                to="/training/enroll"
                 className="btn btn-outline-secondary btn-lg border"
               >
                 Get Enrolled
