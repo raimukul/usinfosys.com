@@ -48,7 +48,7 @@ export default function WhyJoinUs() {
             <div className="col-lg-6">
               <h1 className="mt-3">Why join us? </h1>
               <p className="lead text-secondary my-5">
-                What does it mean to work at AISI? Being a part of some of the
+                What does it mean to work at AIS? Being a part of some of the
                 most interesting team and projects. Helping your clients and
                 colleagues create innovative, game-changing strategies. Develop
                 innovative solutions for some of the world’s leading companies,
