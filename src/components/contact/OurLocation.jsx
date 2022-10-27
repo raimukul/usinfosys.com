@@ -12,13 +12,12 @@ import {
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import FaxIcon from "@mui/icons-material/Fax";
-import { Container } from "@mui/system";
 import React from "react";
 
 export default function OurLocation() {
   return (
     <div>
-      <Container>
+      <div className="container">
         <div className="pt-2">
           <Card>
             <CardHeader
@@ -108,7 +107,7 @@ export default function OurLocation() {
             </CardContent>
           </Card>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

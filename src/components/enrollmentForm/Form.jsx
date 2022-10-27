@@ -125,7 +125,7 @@ export default function Form() {
             <div className="pt-3">
               <Button
                 variant="contained"
-                className="text-left"
+                className="text-left btn-contact"
                 endIcon={<SendIcon />}
                 type="submit"
               >

@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AppBar,
+  Avatar,
   Divider,
   Grid,
   List,
@@ -11,6 +12,9 @@ import {
 import { Container } from "@mui/system";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const ftServices = [
   {
@@ -99,17 +103,47 @@ export default function Footer() {
           >
             <Grid sm={3} xs={12} item={true}>
               <List>
-                <ListItem>
-                  <img
+                <ListItem
+                  sx={{
+                    fontWeight: "bold",
+                    color: "orange",
+                    textDecoration: "none",
+                  }}
+                >
+                  {/* <img
                     src="../assests/logo/American info system logo_square.svg"
                     alt="logo"
                     className="w-50 m-auto"
-                  ></img>
+                  ></img> */}
+                  American Info Systems Inc
                 </ListItem>
                 <Divider />
-                <ListItem className="text-lg-left text-md-left text-center">
+                <ListItem className="text-lg-left text-md-left text-white">
                   A woman-owned business with commitment to provide the quality
                   services to our clients.
+                </ListItem>
+                <ListItem>
+                  <Avatar className="m-2 bg-white">
+                    <TwitterIcon
+                      fontSize="large"
+                      color="primary"
+                      
+                    />
+                  </Avatar>
+                  <Avatar  className="m-2 bg-white">
+                    <LinkedInIcon
+                      fontSize="large"
+                      color="primary"
+                     
+                    />
+                  </Avatar>
+                  <Avatar  className="m-2 bg-white">
+                    <FacebookIcon
+                      fontSize="large"
+                      color="primary"
+                     
+                    />
+                  </Avatar>
                 </ListItem>
               </List>
             </Grid>
