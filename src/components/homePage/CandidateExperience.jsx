@@ -10,6 +10,7 @@ export default function CandidateExperience() {
           <Grid item lg={4} className="m-auto">
             <img
               className="img-fluid"
+              alt="candidate experience"
               src="../../assests/homepage/candidate.webp"
             ></img>
           </Grid>
