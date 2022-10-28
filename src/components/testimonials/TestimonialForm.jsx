@@ -101,7 +101,7 @@ export default function TestimonialForm() {
           <div className="pt-5 container">
             <Button
               variant="contained"
-              className="text-left"
+              className="text-left btn-contact"
               endIcon={<SendIcon />}
               type="submit"
             >
