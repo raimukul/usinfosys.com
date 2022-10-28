@@ -79,7 +79,7 @@
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
+  color: white!important;            
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
@@ -91,3 +91,9 @@
   text-decoration: none;
 }
 
+.bg-clientEx{
+  background: #67B26F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fefefc, #e4f7f5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fefefc, #e4f7f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
