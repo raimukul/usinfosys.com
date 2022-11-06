@@ -5,3 +5,6 @@
 .aFooter:hover{
     color: #f18b32!important;
 }
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}

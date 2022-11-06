@@ -37,7 +37,7 @@ export default function ClientExperience() {
           </Grid>
           <Grid item lg={4} className="m-auto">
             <img
-             alt="client experience"
+              alt="client experience"
               className="img-fluid"
               src="../../assests/homepage/closeup.webp"
             ></img>

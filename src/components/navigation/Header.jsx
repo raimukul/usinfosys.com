@@ -86,6 +86,7 @@ export default function Header() {
                 title="Services"
                 id="collasible-nav-dropdown"
                 eventkey={1}
+                renderMenuOnMount={true}
               >
                 {NService.map((NavService) => {
                   return (
@@ -105,6 +106,7 @@ export default function Header() {
                 title="Solution"
                 id="collasible-nav-dropdown"
                 eventkey={2}
+                renderMenuOnMount={true}
               >
                 {NSolution.map((NavSolution) => {
                   return (
@@ -124,6 +126,7 @@ export default function Header() {
                 title="Training"
                 id="collasible-nav-dropdown"
                 eventkey={8}
+                renderMenuOnMount={true}
               >
                  {NTraining.map((NavTraining) => {
                   return (
@@ -143,6 +146,7 @@ export default function Header() {
                 title="Careers"
                 id="collasible-nav-dropdown"
                 eventkey={11}
+                renderMenuOnMount={true}
               >
                 <NavDropdown.Item
                   as={Link}
