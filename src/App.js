@@ -23,6 +23,7 @@ import ReferralProgram from "./components/career/ReferralProgram";
 import CurrentOpening from "./components/career/CurrentOpening";
 import Testimonial from './components/testimonials/Index'
 import Error404 from "./components/Error/Error404";
+import SubmitResume from './components/submitResume/Index'
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/career/why-join-us" element={<WhyJoinUs/>} />
           <Route path="/career/current-opening" element={<CurrentOpening/>} />
           <Route path="/career/referral" element={<ReferralProgram/>} />
+          <Route path="/submit_resume" element={<SubmitResume/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Testimonial />} />
